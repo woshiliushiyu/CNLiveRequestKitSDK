@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.frameworks   = "UIKit", "Foundation"#支持的框架
 
   s.subspec 'CNLiveRequestKitSDK' do |sp|
-    sp.vendored_frameworks = 'CNLiveRequestKitSDK.framework'
+    sp.vendored_frameworks = 'CNLiveRequestKit.framework'
     sp.dependency 'AFNetworking'
   end
 
