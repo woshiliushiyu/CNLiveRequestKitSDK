@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CNLiveRequestKitSDK"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "LSY-iOS 网络请求基础工具"# 项目简介
   s.homepage     = "https://github.com/woshiliushiyu/CNLiveRequestKitSDK"
   s.source       = { :git => "https://github.com/woshiliushiyu/CNLiveRequestKitSDK.git", :tag => "#{s.version}" }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.frameworks   = "UIKit", "Foundation"#支持的框架
 
   s.subspec 'CNLiveRequestKitSDK' do |sp|
-    sp.vendored_frameworks = 'CNLiveRequestKit.framework'
+    sp.vendored_frameworks = 'CNLiveRequestKitSDK.framework'
     sp.dependency 'AFNetworking'
   end
 
