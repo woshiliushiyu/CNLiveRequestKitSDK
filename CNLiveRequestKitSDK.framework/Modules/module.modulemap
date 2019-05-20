@@ -1,0 +1,6 @@
+framework module CNLiveRequestBastKit {
+  umbrella header "CNLiveRequestBastKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
