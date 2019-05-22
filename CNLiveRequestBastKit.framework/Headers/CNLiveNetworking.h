@@ -124,6 +124,21 @@ typedef NSTimeInterval CNLiveRequestTimeoutInterval;
 - (void)requestChainWithArray:(NSArray <CNLiveNetworking *>*)requestArray
               CompletionBlock:(CNLiveNetworkFeaturCompletionBlock)completionBlock;
 
+#pragma mark - Local Action
+
+/**
+ 通过参数与请求获取该请求的本地数据(此为升级方法使用此方法之后,requestNetworkWithMethod:方法之后回调网络请求成功之后的回调.本地数据返回以此方法获取,如不设置此方法,则和之前用法一致,该接口如本地没缓存,则不反悔 block)
+
+ @param method 请求方法
+ @param urlString 请求连接
+ @param param 请求参数
+ @param completionBlock 返回
+ */
++ (void)requestLocalDataWithMethod:(CNLiveRequestMethod)method
+                         URLString:(NSString *)urlString
+                             Param:(NSDictionary *)param
+                   CompletionBlock:(CNLiveNetworkCompletionBlock)completionBlock;
+
 #pragma mark = Network Status
 
 /**
