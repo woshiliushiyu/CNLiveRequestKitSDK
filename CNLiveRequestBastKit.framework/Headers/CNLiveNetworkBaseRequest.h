@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "CNLiveNetworkEnum.h"
-
 @protocol AFMultipartFormData;
 
 typedef void (^CNLiveConstructingBlock)(id<AFMultipartFormData> formData);
@@ -85,8 +84,6 @@ typedef void(^CNLiveChainRequestCompletionBlock)(NSArray * requestArray);
 @property (nonatomic, readonly, getter=isExecuting) BOOL executing;
 /// 
 @property (assign, nonatomic) BOOL resultResponseAsynchronously;
-/**是否获取本地数据*/
-@property (assign, nonatomic) BOOL resultResp;
 ///待请求数组
 @property (nonatomic, strong) NSArray * requestArray;
 ///流式上传block
