@@ -47,7 +47,7 @@ typedef NSTimeInterval CNLiveRequestTimeoutInterval;
 + (instancetype)networkManager;
 
 /**
- 获取当前请求版本
+ 获取当前请求版本 1.3.1
  */
 + (NSString *)networkingVersion;
 
