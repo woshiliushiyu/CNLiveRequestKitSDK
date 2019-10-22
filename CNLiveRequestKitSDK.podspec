@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CNLiveRequestKitSDK"
-  s.version      = "1.4.1"
+  s.version      = "1.4.2"
   s.summary      = "LSY-iOS 网络请求基础工具"# 项目简介
   s.homepage     = "https://github.com/woshiliushiyu/CNLiveRequestKitSDK"
   s.source       = { :git => "https://github.com/woshiliushiyu/CNLiveRequestKitSDK.git", :tag => "#{s.version}" }
