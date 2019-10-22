@@ -51,6 +51,11 @@ typedef NSTimeInterval CNLiveRequestTimeoutInterval;
  */
 + (NSString *)networkingVersion;
 
+/**
+ 获取本地缓存地址
+ */
++ (NSString *)networkingCachePath;
+
 #pragma mark = Request Network
 
 /**

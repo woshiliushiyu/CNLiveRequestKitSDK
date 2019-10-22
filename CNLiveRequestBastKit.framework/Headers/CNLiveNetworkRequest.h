@@ -19,5 +19,8 @@
 @property (copy, nonatomic)id cacheSensitiveData;
 ///同 CNLiveNetworking setWriteCacheAsynchronously:
 @property (assign, nonatomic) BOOL writeCacheAsynchronously;
+
+//缓存地址
+@property (copy, nonatomic) NSString * cachePath;
 @end
 
